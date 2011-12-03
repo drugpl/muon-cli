@@ -42,9 +42,17 @@ module Muon
 
       desc 'List project details'
       command :list do |c|
-        c.desc 'List my resources'
+        c.desc 'List my time entries'
+        c.switch :time
+
+        c.desc 'List my tasks'
+        c.switch :task
+
+        c.desc 'List my projects'
+        c.switch :project
+
         c.action do |global, options, arguments|
-          # list tasks from api
+          puts options.inspect
         end
       end
     end
