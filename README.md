@@ -1,7 +1,7 @@
 muon-cli
 =================
 
-The Actsi As Messageable allows communication between the models.
+muon-cli - work time catcher
 
 Instalation
 ===========
@@ -27,11 +27,10 @@ You can also edit ~/.muon/history file with your favorite editor.
 
 Example File
 ============
-============
 
 ```
 "20 minutes","Project name","Description"
-"3 houts","Another project name","Description"
+"3 hours","Another project name","Description"
 ```
 
 And after edit just
