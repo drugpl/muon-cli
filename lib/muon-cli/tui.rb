@@ -52,7 +52,8 @@ module Muon
         c.switch :project
 
         c.action do |global, options, arguments|
-          puts options.inspect
+          client = Muon::CLI::Client.new
+          puts client.time_entries
         end
       end
     end

@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency('gli')
   gem.add_dependency('faraday')
   gem.add_dependency('json')
+  gem.add_dependency('faraday_middleware')
 end
