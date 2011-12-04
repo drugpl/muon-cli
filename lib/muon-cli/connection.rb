@@ -1,5 +1,6 @@
 require 'faraday'
 require 'faraday/response/parse_json'
+require 'eventmachine'
 
 module Muon
   module CLI
@@ -16,7 +17,7 @@ module Muon
 
         Faraday.new(default_options.merge(options)) do |builder|
           builder.use Faraday::Response::ParseJson
-          builder.use Faraday::Adapter::NetHttp # use net-http
+          builder.use Faraday::Adapter::EMSynchrony
         end
       end
     end

@@ -5,12 +5,7 @@ require 'muon-cli/client_methods'
 module Muon
   module CLI
     class Client
-      # client class namespaces modules
-      require 'muon-cli/client/projects'
-      require 'muon-cli/client/tasks'
-      require 'muon-cli/client/time_entries'
-      require 'muon-cli/client/endpoint'
-
+      Dir["#{File.dirname(__FILE__)}/client/*.rb"].each {|f| require f}
       include Muon::CLI::Connection
       include Muon::CLI::Request
 

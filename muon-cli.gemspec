@@ -18,6 +18,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency('chronic_duration')
   gem.add_dependency('gli')
   gem.add_dependency('faraday')
-  gem.add_dependency('json')
   gem.add_dependency('faraday_middleware')
+  gem.add_dependency('em-synchrony')
+  gem.add_dependency('em-http-request')
+  gem.add_dependency('multi_json')
 end
